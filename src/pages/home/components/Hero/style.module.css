@@ -1,0 +1,198 @@
+.swiper {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+
+  .parallax__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    /* filter: sepia(100%); */
+    /* filter: hue-rotate(-60deg); */
+    /* filter: hue-rotate(90deg); */
+  }
+
+
+
+  .overlay__base1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background: linear-gradient(to right, rgba(7, 18, 99, 0.9), rgba(255, 255, 255, 0.5));
+    opacity: 1;
+  }
+
+  .overlay__base2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.4));
+    opacity: 0.9;
+  }
+
+  .overlay1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.04);
+    clip-path: polygon(35% 0%, 45% 100%, 50% 100%, 40% 0%);
+    transform: translateX(50px);
+    transition: all 0.9s ease-in-out;
+  }
+
+  .overlay2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(35% 0%, 45% 100%, 55% 100%, 45% 0%);
+    transform: translateX(-30px);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .overlay3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    clip-path: polygon(45% 0%, 35% 100%, 45% 100%, 55% 0%);
+    transform: translateX(-30px);
+    transition: all 1s ease-in-out;
+  }
+  
+
+  .swiper__slide {
+    padding: 0;
+    padding-bottom: 10px;
+    opacity: 0;
+    transition: all 0.5s linear 1s;
+    transform: translateX(50px);
+    color: white;
+    z-index: 10;
+  }
+  .slide__content {
+    padding-top: 15%;
+    z-index: 10;
+  }
+  .slide__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    z-index: 10;
+  }
+
+  .slide__footer {
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+  }
+
+  .slide__skew {
+    font-style: italic;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(63, 169, 255);
+    display: inline-block;
+    transition: transform 0.6s ease-out 0.7s, opacity 0.4s ease-in 0.6s;
+    transform: translateX(20px);
+  }
+
+  .swiper :global(.swiper-slide-active) {
+    transition: transform 0.6s ease-out 0.6s, opacity 0.4s ease-in 0.6s;
+    transform: translateX(20px);
+  }
+
+  .swiper :global(.swiper-slide-fully-visible) {
+
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .swiper :global(.swiper-slide-fully-visible) .slide__skew {
+
+    transform: translateX(0px);
+
+  }
+  
+
+  :global(.swiper-pagination) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  
+  }
+
+
+  :global(.swiper-pagination-bullet) {
+    width: 25px;
+    height: 20px;
+    background-color: #fff;
+    opacity: 0.5;
+    content: "123";
+    margin: 3px;
+    transition: opacity .3s linear;
+    cursor: pointer;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    opacity: 1;
+    background-color: rgb(0, 149, 255);
+  }
+
+  .overlay {
+
+  }

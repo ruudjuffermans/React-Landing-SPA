@@ -1,0 +1,135 @@
+.footer__shadowcomp {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  background-color: rgb(46, 46, 46);
+  z-index: -1;
+  width: 100%;
+
+}
+
+
+.inl__img {
+  height: 16px;
+  width: 16px;
+  display: inline;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.inl__text {
+
+}
+.footer {
+  background-color: rgb(46, 46, 46);
+  padding: 80px 0;
+  color: rgba(255, 255, 255, 0.9);
+
+}
+
+.footer__logo {
+  width: 120px;
+  margin: 20px auto;
+}
+
+.footer__listtitle {
+  display: none;
+}
+
+.footer__li {
+  text-wrap: nowrap;
+}
+.grid__logocontainer {
+  padding: 20px;
+}
+
+.grid__container {
+  padding: 20px;
+}
+
+.footer__sitetitle {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-wrap: nowrap;
+}
+
+.footer__sitesubtitle {
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+.footer__title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.footer__grid {
+  width: 100%;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 620px) {
+  .footer__grid {
+    width: 100%;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .footer__sitetitle {
+    font-size: 20px;
+    text-align: left;
+    text-wrap: nowrap;
+    margin-bottom: unset;
+  }
+  
+  .footer__sitesubtitle {
+    text-align: left;
+    font-weight: unset;
+    letter-spacing: unset;
+  }
+
+  .footer__logo {
+    width: 120px;
+    margin: 20px 0;
+  }
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .footer__grid {
+      width: 100%;
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+    }
+
+    .footer__sitetitle {
+      display: none;
+    }
+    
+    .footer__sitesubtitle {
+      display: none;
+    }
+
+    .footer__logo {
+      width: 150px;
+      margin: 20px 0;
+    }
+
+    .footer__listtitle {
+      display: unset;
+    }
+    
+  
+    }
+  

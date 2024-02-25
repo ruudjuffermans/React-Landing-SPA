@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  padding-right: var(--gutter);
+  padding-left: var(--gutter);
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: auto;
+  max-width: var(--maxwidth)
+}

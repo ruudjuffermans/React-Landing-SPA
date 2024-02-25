@@ -1,0 +1,102 @@
+.courselist {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+.post {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.post__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 50px;
+  transition: all ease-in-out 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.post__date {
+  position: relative;
+  width: 60px;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  font-weight: 500;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.post:hover .post__date  {
+ opacity: 0.6;
+}
+
+.post__img {
+  height: 50px;
+  width: 50px;
+  
+}
+
+.post__title {
+text-align: left;
+font-size: 16px;
+color: var(--text);
+font-weight: 500;
+line-height: 1.2;
+
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.post__subtitle {
+font-size: 14px;
+opacity: 0.5;
+font-weight: 100;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.post:hover .post__text  {
+ opacity: 0.6;
+}
+
+
+.post__read {
+  position: relative;
+  width: 55px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 500;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.post:hover .post__read {
+width: 60px;
+}
+
+.post .post__read::after {
+  transition: all ease-in-out 0.2s;
+  content: url("data:image/svg+xml; utf8, <svg fill='white' xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24'><path d='M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z'/></svg>");
+  display:inline-block;
+  height:10px;
+  width:10px;
+  opacity: 0;
+}
+
+.post:hover .post__read::after {
+opacity: 1;
+}

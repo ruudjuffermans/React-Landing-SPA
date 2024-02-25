@@ -1,0 +1,135 @@
+.page__subtitle {
+    font-size: 16px;
+    color: rgb(95, 178, 255);
+    font-weight: 600;
+}
+
+.page__divider {
+    display: flex;
+    position: relative;
+
+}
+
+.divider__left {
+flex: 1;
+}
+.divider__right {
+    position: relative;
+    flex: 1;
+}
+
+.dienst__cardrow {
+    display: flex;
+    gap: 20px;
+}
+.dienst__card {
+    width: 100%;
+    aspect-ratio: 2/2;
+    padding: 2cqi;
+    content: "";
+    background-color: rgb(114, 200, 253);
+}
+
+.card__icon {
+    width: 50%;
+    margin: auto;
+    fill: blue;
+}
+
+
+.card__title {
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+.card__content {
+    text-align: center;
+    line-height: 1.2;
+    color: white;
+}
+
+.dienst__img1 {
+    /* border: 10px solid white; */
+    /* position: absolute;
+    left: 50px;
+    bottom:50px;
+    width: 50%; */
+    /* aspect-ratio: 1; */
+    display: block;
+}
+
+.dienst__imgwrapper1 {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    overflow: hidden;
+    left: 10%;
+    bottom: 0;
+    z-index: 1;
+    /* top: 100px; */
+}
+
+.dienst__imgwrapper2 {
+    background-color: green;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    right: 10%;
+    top: 0%;
+    overflow: hidden;
+    content: "ss";
+    display: block;
+}
+
+.dienst__img2 {
+    /* width: 70%; */
+    /* width: a0%; */
+    /* height: 70%; */
+
+    /* aspect-ratio: 1; */
+    background-position: contain;
+    height: 100%;
+    display: block;
+}
+
+
+.swiper {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+  }
+
+.swiper :global(.swiper-button-next) {
+    color: rgb(78, 166, 255);
+
+    transform: scale(0.8);
+    right: -40px;
+}
+
+.swiper :global(.swiper-button-prev) {
+    color: rgb(78, 166, 255);
+
+    transform: scale(0.8);
+      left: -40px;
+  }
+
+  :global(.swiper-cube-shadow)::before {
+    opacity: 0.3;
+  }
+  
+  .swiper__slide {
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    overflow: hidden
+    ;
+  }
+  
+  .swiper__slide img {
+    display: block;
+    width: 100%;
+  }
+  

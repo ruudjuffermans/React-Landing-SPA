@@ -1,0 +1,30 @@
+
+.subnav__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 10px;
+  width: fit-content;
+  background-color: rgb(176, 93, 176);
+}
+
+.subnav__item {
+  padding: 2px 12px;
+  border-radius: 5px;
+  background-color: rgb(141, 41, 141);
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+.arrow {
+  transform: rotate(-90deg);
+  height: 40px;
+  width: 40px;
+}
+
+.arrow:hover {
+opacity: 0.5;
+}

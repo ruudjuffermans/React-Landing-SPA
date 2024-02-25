@@ -1,0 +1,74 @@
+.drawer {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-y: auto;
+  z-index: 20;
+  border: 0;
+}
+
+.drawer {
+  color: white;
+  fill: white;
+  background: var(--color-primary);
+  height: 100vh;
+  width: 100%;
+  max-width: calc(100% - 50px);
+  padding-left: 64px;
+  padding-top: 40px;
+  margin-left: auto;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out 0.3s;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.drawer--MOUNTED {
+  transform: translateX(100%);
+}
+
+.drawer--ENTERING {
+  transform: translateX(0);
+}
+
+.drawer--ENTERED {
+  transform: translateX(0);
+}
+
+.drawer--LEAVING {
+  transform: translateX(100%);
+}
+
+.menu__list {
+  padding-top: 40px;
+  list-style: none;
+  margin: auto;
+}
+
+.menu__item {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 700;
+}
+.drawer__link:hover {
+opacity: 0.5;
+}
+
+.drawer__link::before {
+  height: 3px !important;
+}
+
+.drawer__btn {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: var(--text);
+}
+
+.drawer__btn:hover {
+  opacity: 0.5;
+  }
+  
